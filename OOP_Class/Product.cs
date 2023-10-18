@@ -11,5 +11,15 @@ namespace OOP_Class
         //Default Methot (get set)= บีฟอ เม็ดตอด
         //get อ่านค่า
         //set ใส่ค่า
+
+        //สาธารระ
+        //public void Display(Product p)
+        //{
+        //    Console.WriteLine($"{p.Id} {p.Name} {p.Price} {p.Amoumt} ");
+        //}
+        //ไม่จำเป็น
+
+        //Lamda, Arrow function
+        public void Display() => Console.WriteLine($"{Id} {Name} {Price} {Amoumt}");
     }
 }

@@ -31,10 +31,11 @@ t.Amoumt = 20;
 //---------------------------------------------------------------------------------------------------------
 
 //Reuse ใช้ซ้ำได้
-Display(product);
-Display(t);
+//Display(product);
+//Display(t);
+product.Display(product);
+t.Display(t);
 
-void Display(Product p)
-{
-    Console.WriteLine($"{p.Id} {p.Name} {p.Price} {p.Amoumt} ");
-}
+
+
+

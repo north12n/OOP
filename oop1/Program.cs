@@ -61,7 +61,7 @@ double process(double rate)
     //ตัวแปรเฉพาะที่ เพราะประกาศไว้ถายในนี้
     var sum = Price * Amount;
     var result = sum - sum * rate;
-    return result; //ค่าsumเป็น double ต้องเปลี่ยนหัวให้เป็น double fyfufiygiygiyg
+    return result; //ค่าsumเป็น double ต้องเปลี่ยนหัวให้เป็น 
 }
 
           //ใส่ ref เรฟฟอเร้น = ดารชิ้นตำแหล่ง
@@ -91,3 +91,10 @@ double Summary(params int[] number)
     }
     return number.Sum();
 }
+
+// class แบบฟรอม ของ ออบเจ็ค
+class idenitifier
+{
+    //class attridut and method
+}
+

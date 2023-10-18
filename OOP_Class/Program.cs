@@ -3,18 +3,23 @@ using OOP_Class;
 using System.ComponentModel.DataAnnotations;
 
 Product product = new Product();
-Product t =  new Product();
+Product ton =  new Product();
 Product p = new Product();
 
-product.Id = 1;
-product.Name = "Coffee";
-product.Price = 10;
-product.Amoumt = 20;
+//--------------------------------------------------------------------------------------------------------
+//product.Id = 1;
+//product.Name = "Coffee";
+//product.Price = 10;
+//product.Amoumt = 20;
 
-t.Id = 2;
-t.Name = "Cream";
-t.Price = 20;
-t.Amoumt = 20;
+product.Input(new Product { Id = 1, Name = "Coffee", Price = 10, Amoumt = 20 });
+
+//ton.Id = 2;
+//ton.Name = "Cream";
+//ton.Price = 20;
+//ton.Amoumt = 20;
+
+ton.Input(new Product { Id =2, Name = "Cream", Price = 20, Amoumt = 20 });
 
 //---------------------------------------------------------------------------------------------------------
 //Console.WriteLine($"{product.Id} {product.Name} {product.Price} {product.Amoumt}");
@@ -33,8 +38,9 @@ t.Amoumt = 20;
 //Reuse ใช้ซ้ำได้
 //Display(product);
 //Display(t);
-product.Display(product);
-t.Display(t);
+
+product.Display();
+ton.Display();
 
 
 

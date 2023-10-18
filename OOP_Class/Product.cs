@@ -20,14 +20,10 @@ namespace OOP_Class
         //ไม่จำเป็น
 
         //Lamda, Arrow function
-        public void Display() => Console.WriteLine($"{Id} {Name} {Price} {Amoumt}");
 
-        public void Input(Product product)
-        {
-            Id =product.Id;
-            Name = product.Name;
-            Price = product.Price;
-            Amoumt = product.Amoumt;
-        }
+        //เหมือน Conslo
+        public void Display() => Console.WriteLine($"{Id} {Name}: {Price.ToString("#,###.##")}: {Amoumt}");
+
+        
     }
 }

@@ -1,30 +1,9 @@
 ﻿
-using OOP_Class;
+using Administration;
 
-//วัตถุ
-//Array = จำกันจำนวน
-//Product[] product = new Product[100];
+var employees = Employees.GenerateEmployees(5);
 
-//list = ไม่จำกันจำนวน
-List<Product> products = new List<Product>();
-Random random = new Random();
-
-for (int i = 0; i < 100; i++)
+foreach (var employee in employees)
 {
-    products.Add(new Product
-    {
-        Id = i,
-        Name = "Coffee" + i,
-        Price = random.NextDouble() * 990 + 10, //หว่าง 10 ถึง 1000
-        Amoumt = random.Next(10,50)
-    });
+    employee.Display();
 }
-
-//foreach (var item in products)
-//{
-//    item.Display();
-//}
-
-products.ForEach(p => p.Display());
-
-

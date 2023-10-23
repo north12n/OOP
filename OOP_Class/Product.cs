@@ -14,12 +14,7 @@ namespace Administration
 
         public void Display()
         {
-            Console.WriteLine($"Id > {Id}\nEmployee Name > " +
-                $"{Name}\nSalary > {Salary}\nSales > " +
-                $"{Sales}\nRate > {Rate}%\nCompensation > " +
-                $"{Sales * (Rate / 100)}\nTax > " +
-                $"{Tax}%\nSalary All > " +
-                $"{Salary - (Tax / 100) * Salary }\n");
+            Console.WriteLine($"Id > {Id}\nEmployee Name > {Name}\nSalary > {Salary}\nSales > {Sales}\nRate > {Rate}%\nCompensation > {Sales * (Rate / 100)}\nTax > {Tax}%\nSalary All > {Salary - (Tax / 100) * Salary }\n");
         }
         public static List<Employees> GenerateEmployees(int number = 5)
         {

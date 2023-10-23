@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Class", "OOP_Class\OOP_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "การบ้าน", "การบ้าน\การบ้าน.csproj", "{A56B21F0-772A-4F37-9096-24E71CA08463}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW01", "HW01\HW01.csproj", "{95956183-98C3-4589-9919-781F6210FA27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HW01", "HW01\HW01.csproj", "{95956183-98C3-4589-9919-781F6210FA27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO2_Constructor", "PO2_Constructor\PO2_Constructor.csproj", "{B145504E-A5E4-4BE1-A325-60FC83BFB71C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Constructor", "PO2_Constructor\P02_Constructor.csproj", "{B145504E-A5E4-4BE1-A325-60FC83BFB71C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

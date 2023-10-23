@@ -1,56 +1,56 @@
-﻿
-    public class Product
+﻿namespace P02_Constructor
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public double Price { get; set; }
-    public int Amount { get; set; }
-
-
-    //Constructor ชื่อเดียวกับคลาส
-    public Product()
+    public class Product
     {
-        Products = new List<Product>();
-    }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public int Amount { get; set; }
 
-    public Product(int number)
-    {
-        Console.WriteLine($"{number}");
-    }
+        //การมีอยู่ การฝัง
+        static public List<Product> Products { get; set; } = new List<Product>();
 
-    public Product(string Name)
-    {
-        Products = new List<Product>();
-
-        //this คือ ระบุว่าเป็น preperties ภายในคลาส
-        this.Name = Name;
-    }
-
-
-    public List<Product> Products { get; set; }
-
-    public void GenerateProduct(int number = 1)
-    {
-        Random rand = new Random();
-
-        for (int i = 1; i <= number; i++)
+        //Constructor ชื่อเดียวกับคลาส
+        public Product()
         {
-            Products.Add(new Product
-            {
-                Id = i,
-                Name = this.Name + i,
-                Price = rand.NextDouble() * 990 + 10,
-                Amount = rand.Next(10, 50)
-            });
+
         }
 
+        public Product(int number)
+        {
+            Console.WriteLine($"{number}");
+        }
+
+        public Product(string Name)
+        {
+            //this คือ ระบุว่าเป็น properties ภายในคลาส
+            this.Name = Name;
+        }
+
+
+        public void GenerateProduct(int number = 1)
+        {
+            Random rand = new Random();
+
+            for (int i = 1; i <= number; i++)
+            {
+                Products.Add(new Product
+                {
+                    Id = i,
+                    Name = Name + i,
+                    Price = rand.NextDouble() * 990 + 10,
+                    Amount = rand.Next(10, 50)
+                });
+            }
+
+        }
+
+        public void Display()
+        {
+            Products.ForEach(p => Console.WriteLine($"{p.Id} {p.Name} {p.Price.ToString("#,###.##")} {p.Amount}"));
+        }
+
+
+
     }
-
-    public void Display()
-    {
-        Products.ForEach(p => Console.WriteLine($"{p.Id} {p.Name} {p.Price.ToString("#,###.##")} {p.Amount}"));
-    }
-
-
-
 }

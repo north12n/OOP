@@ -18,10 +18,12 @@
         Console.WriteLine($"{number}");
     }
 
-    public Product(string name)
+    public Product(string Name)
     {
         Products = new List<Product>();
-        Name = name;
+
+        //this คือ ระบุว่าเป็น preperties ภายในคลาส
+        this.Name = Name;
     }
 
 
@@ -36,7 +38,7 @@
             Products.Add(new Product
             {
                 Id = i,
-                Name = Name + i,
+                Name = this.Name + i,
                 Price = rand.NextDouble() * 990 + 10,
                 Amount = rand.Next(10, 50)
             });

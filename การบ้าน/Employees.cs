@@ -16,7 +16,8 @@ namespace การบ้าน
         public double Rate { get; set; }
 
         //Method
-        List<Employees> GenereteData(int number=1)
+        //ใส่ public เพื่อให้ข้างนอกรู้จัก
+        public List<Employees> GenereteData(int number=1)
         {
             var data = new List<Employees>();
             Random random = new Random();
@@ -35,22 +36,7 @@ namespace การบ้าน
             return data;
         }
 
-        // Method
-        public void Display(int person)
-        {
-            var IncomeData = GenereteData(person); //Add มา ... รายการ
-
-            foreach (var item in IncomeData)
-            {
-                var Income = item.Salary + item.Sales * item.Rate;
-                //var Net = Income - Income * 0.05;
-
-                var tex = Income * 0.05;
-                var net = Income - tex;
-
-                Console.WriteLine($"{item.Id} {item.Name } {item.Salary} {item.Sales} {item.Rate} {Income} {tex} {net} ");
-            }
-        }
+        
 
     }
 }

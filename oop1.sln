@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "การบ้าน", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW01", "HW01\HW01.csproj", "{95956183-98C3-4589-9919-781F6210FA27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PO2_Constructor", "PO2_Constructor\PO2_Constructor.csproj", "{B145504E-A5E4-4BE1-A325-60FC83BFB71C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{95956183-98C3-4589-9919-781F6210FA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95956183-98C3-4589-9919-781F6210FA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95956183-98C3-4589-9919-781F6210FA27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B145504E-A5E4-4BE1-A325-60FC83BFB71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B145504E-A5E4-4BE1-A325-60FC83BFB71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B145504E-A5E4-4BE1-A325-60FC83BFB71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B145504E-A5E4-4BE1-A325-60FC83BFB71C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

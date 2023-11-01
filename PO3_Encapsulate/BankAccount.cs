@@ -11,7 +11,7 @@ namespace PO3_Encapsulate
         public int Id {  get; set; }
         public string Name { get; set; }
         private string Password { get; set; }
-        protected double Monry { get; set; }
+        protected double Money { get; set; } //ป้องกัน
         internal double Rate { get; set; }
 
 
@@ -23,11 +23,11 @@ namespace PO3_Encapsulate
 
             if (this.Password == "1234") 
             {
-                Console.WriteLine(Monry);
+                Console.WriteLine(Money);
             }
             else
             {
-                Console.Write(Monry);
+                Console.Write(Money);
             }
         }
     }

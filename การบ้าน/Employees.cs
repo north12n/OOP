@@ -1,42 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace การบ้าน
+namespace HW01_Solution
 {
-    public class Employees
+    public class Employee
     {
         //Properties
         public int Id { get; set; }
         public string Name { get; set; }
-        public int Salary { get; set; }
-        public int Sales { get; set; }
+        public double Salary { get; set; }
+        public double Sale { get; set; }
         public double Rate { get; set; }
 
+
         //Method
-        //ใส่ public เพื่อให้ข้างนอกรู้จัก
-        public List<Employees> GenereteData(int number=1)
+        public List<Employee> GenerateData(int number = 1)
         {
-            var data = new List<Employees>();
+            var data = new List<Employee>();
             Random random = new Random();
 
             for (int i = 1; i <= number; i++)
             {
-                data.Add(new Employees()
+                data.Add(new Employee
                 {
                     Id = i,
-                    Name = "Employees" + i,
-                    Salary = random.Next(10_000, 200_000),
-                    Sales = random.Next(5_000, 100_000),
+                    Name = "Employee" + i,
+                    Salary = random.Next(10000, 99999),
+                    Sale = random.Next(500_000, 1000_000),
                     Rate = random.NextDouble() * 10,
                 });
             }
             return data;
         }
-
-        
 
     }
 }

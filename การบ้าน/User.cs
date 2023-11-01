@@ -1,28 +1,29 @@
-﻿
-namespace การบ้าน
+﻿namespace HW01_Solution
 {
     public class User
     {
-        public Employees Employees { get; set; } = new Employees();
-        // Method
-        public void Display(int person) //Display = การนำมาใช้
+        public Employee Employee { get; set; } = new Employee();
+
+        //Method
+        public void Display(int person)
         {
-            // ใส่ public บนEmployees ใน Employees.cs แล้ว สามารถใช้ Employees.GenereteData(person) ได้
-            var IncomeData = Employees.GenereteData(person); //Add มา ... รายการ
+            var IncomeData = Employee.GenerateData(person);
 
             foreach (var item in IncomeData)
             {
-                var Income = item.Salary + item.Sales * item.Rate;
-                var tex = Income * 0.05;
-                var net = Income - tex;
+                var income = item.Salary + item.Sale * item.Rate;
+                var tax = income * 0.05;
+                var net = income - tax;
 
-                Console.WriteLine($"{item.Id} {item.Name} {Show(item.Salary)} {item.Sales} {item.Rate} {Income} {tex} {net} ");
+                Console.WriteLine($"{item.Id,5} {item.Name,10} {Show(item.Salary),8}  {Show(item.Sale),10} " +
+                    $"{Show(item.Rate),5} {Show(income),15} {Show(tax),15} {Show(net),15}");
             }
         }
-        //สร้าง MetHod ทำให้ตวเลขสวยส่งไปใช้ เป็น พารามิตเตอร์ คือ Show() เช่น {Show(item.Salary)}
+
         string Show(double number)
-        { 
-            return number.ToString("#,###.##"); 
+        {
+            return number.ToString("#,###.##");
         }
+
     }
 }

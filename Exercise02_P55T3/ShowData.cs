@@ -2,6 +2,7 @@
 {
     internal class ShowData
     {
+        //คอนตักเตอ
         public GenerateData GenerateData { get; set; }
         public ShowData()
         {
@@ -17,6 +18,7 @@
             }
         }
 
+        //เมธอด
         public void DisplayBySectionGroup()
         {
             foreach (var group in GenerateData.GroupOfSection())
@@ -30,6 +32,7 @@
             }
         }
 
+        //เมธอด
         public string NameOfSection(int section)
         {
             string name = string.Empty;
@@ -46,6 +49,7 @@
             return name;
         }
 
+        //เมธอด
         public void DisplayByGroupAge()
         {
             foreach (var group in GenerateData.GroupOfAge())
@@ -61,6 +65,7 @@
             };
         }
 
+        //เมธอด
         public string NameOfAge(int age)
         {
             string name = string.Empty;

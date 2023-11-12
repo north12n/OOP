@@ -59,8 +59,5 @@
             }
             return GroupAges.GroupBy(p => p.GroupOfAge).ToList();
         }
-
-
-
     }
 }

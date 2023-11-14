@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Polimorphsim", "P04-Pol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Interface", "P05-Interface\P05-Interface.csproj", "{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-InterFace", "P06-InterFace\P06-InterFace.csproj", "{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

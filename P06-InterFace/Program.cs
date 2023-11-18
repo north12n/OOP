@@ -2,8 +2,9 @@
 
 var ps = new ProductService();
 
-ps.GenerateProduct(20);
+ps.GenerateProduct(50);
 ps.DisplayProduct();
 
 Console.WriteLine();
-ps.DisplayGroupByPrice();
+//ps.DisplayGroupByPrice();
+ps.SearchProduct();

@@ -20,7 +20,7 @@ namespace P06_Interface
                     Id = i,
                     Name = "Coffee",
                     Price = random.Next(10, 200),
-                    PriceGr = random.Next(1, 5)
+                    PriceGr = random.Next(1, 6)
                 });
             }
         }
@@ -85,6 +85,15 @@ namespace P06_Interface
                 2 => " 101-200",
                 _ => " ",
             };
+        }
+        public void SearchProduct()
+        {
+            Console.Write("Enter Id: ");
+            var id = int.Parse(Console.ReadLine());
+
+            var result = ProductManagement.GetProductById(id);
+            if (result == null) Console.WriteLine("Not Found");
+            else Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5} {result.PriceGr,5}");
         }
     }
 

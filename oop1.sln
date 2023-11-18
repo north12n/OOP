@@ -21,9 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise02_P55T3", "Exercis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04-Polimorphsim", "P04-Polimorphsim\P04-Polimorphsim.csproj", "{3E515830-2F89-46E4-BE94-2AF728E4623A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05-Interface", "P05-Interface\P05-Interface.csproj", "{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05-Interface", "P05-Interface\P05-Interface.csproj", "{3699A2C0-D5DB-4B71-8679-CEE801EB9A52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06-InterFace", "P06-InterFace\P06-InterFace.csproj", "{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06-InterFace", "P06-InterFace\P06-InterFace.csproj", "{3CAA7E0F-9B8E-46C9-A86E-902C686C0ED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,5 +8,5 @@ ps.DisplayProduct();
 Console.WriteLine();
 //ps.DisplayGroupByPrice();
 //ps.SearchByAny();
-
-ps.DeleteProductById();
+//ps.DeleteProductById();
+ps.UpdataProductService();

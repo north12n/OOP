@@ -20,7 +20,7 @@ namespace P06_Interface
                     Id = i,
                     Name = "Coffee",
                     Price = random.Next(10, 200),
-                    PriceGr = random.Next(1, 5)
+                    Category = random.Next(1, 5)
                 });
             }
         }
@@ -29,7 +29,7 @@ namespace P06_Interface
         {
             foreach (var item in ProductManagement.GetProducts())
             {
-                Console.WriteLine($" {item.Id,5}  {item.Name,-7} {item.Price,4} {item.PriceGr,4}");
+                Console.WriteLine($" {item.Id,5}  {item.Name,-7} {item.Price,4} {item.Category,4}");
             }
         }
 
@@ -53,7 +53,7 @@ namespace P06_Interface
                     _ => 3,
                 };
 
-                tempty = item.PriceGr;
+                tempty = item.Category;
                 temp.Add(new TempGroup { group = tempGr, groupTy = tempty });
             }
             return temp;
@@ -99,7 +99,7 @@ namespace P06_Interface
             else
             {
                 Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5}" +
-                              $" {result.PriceGr,5}");
+                              $" {result.Category,5}");
             }
 
             return result;
@@ -118,7 +118,7 @@ namespace P06_Interface
             else
             {
                 result.ForEach(x => Console.WriteLine($"{x.Id,5} {x.Name,5}" +
-                    $" {x.Price,5} {x.PriceGr,5}"));
+                    $" {x.Price,5} {x.Category,5}"));
             }
         }
 
@@ -134,6 +134,19 @@ namespace P06_Interface
             DisplayProduct();
         }
 
+        public void UpdataProductService()
+        {
+            UpdataProductService:
+            var result = SearchProduct();
+
+            if (result == null) goto UpdataProductService;
+
+            var newProduct = ProductManagement.InputProduct(result);
+
+            ProductManagement.UpdataProduct(newProduct,result);
+
+            DisplayProduct();
+        }
 
 
     }

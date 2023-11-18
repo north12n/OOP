@@ -3,10 +3,13 @@
     public class ProductManagement : IProductManagement
     {
         public List<Product> Products { get; set; }
+        public Product Product { get; set; }
 
+        //คอนตักเตอ สร้างออปเจค
         public ProductManagement()
         {
             Products = new List<Product>();
+            Product = new Product();
         }
 
         public void AddProduct(Product product)
@@ -35,7 +38,7 @@
             var result = Products.Where(p => p.Name.ToUpper().Contains(keyword.ToUpper()) ||
               p.Id.Equals(number) ||
               p.Price > number ||
-              p.PriceGr.Equals(number)).ToList();
+              p.Category.Equals(number)).ToList();
 
             return result;
         }
@@ -45,6 +48,30 @@
             if (product == null) return;
 
             Products.Remove(product);
+        }
+
+        public void UpdataProduct(Product Newproduct, Product OldProduct)
+        {
+            var index = Products.IndexOf(OldProduct);
+            Products.Remove(OldProduct);
+            Products.Insert(0, Newproduct);
+        }
+
+        public Product InputProduct(Product product)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Product Id: " + Product.Id);
+
+            Console.Write("Input Name: ");
+            product.Name = Console.ReadLine();
+
+            Console.Write("Input Price: ");
+            product.Price = double.Parse(Console.ReadLine());
+
+            Console.Write("Input Category: ");
+            product.Category = int.Parse(Console.ReadLine());
+
+            return product;
         }
 
     }

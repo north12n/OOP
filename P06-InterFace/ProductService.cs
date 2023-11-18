@@ -20,7 +20,7 @@ namespace P06_Interface
                     Id = i,
                     Name = "Coffee",
                     Price = random.Next(10, 200),
-                    PriceGr = random.Next(1, 6)
+                    PriceGr = random.Next(1, 5)
                 });
             }
         }
@@ -86,15 +86,56 @@ namespace P06_Interface
                 _ => " ",
             };
         }
-        public void SearchProduct()
+        public Product SearchProduct()
         {
             Console.Write("Enter Id: ");
             var id = int.Parse(Console.ReadLine());
 
             var result = ProductManagement.GetProductById(id);
-            if (result == null) Console.WriteLine("Not Found");
-            else Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5} {result.PriceGr,5}");
+            if (result == null)
+            {
+                Console.WriteLine("Not found");
+            }
+            else
+            {
+                Console.WriteLine($"{result.Id,5} {result.Name,5} {result.Price,5}" +
+                              $" {result.PriceGr,5}");
+            }
+
+            return result;
         }
+
+        public void SearchByAny()
+        {
+            Console.Write("Enter number ");
+            var number = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter keyword ");
+            var keyword = Console.ReadLine();
+
+            var result = ProductManagement.GetProductByAny(number, keyword);
+            if (result.Count == 0) Console.WriteLine("Not found");
+            else
+            {
+                result.ForEach(x => Console.WriteLine($"{x.Id,5} {x.Name,5}" +
+                    $" {x.Price,5} {x.PriceGr,5}"));
+            }
+        }
+
+        public void DeleteProductById()
+        {
+            var result = SearchProduct();
+
+            if (result == null) return;
+
+            ProductManagement.DeleteById(result);
+
+            Console.WriteLine();
+            DisplayProduct();
+        }
+
+
+
     }
 
     public class TempGroup

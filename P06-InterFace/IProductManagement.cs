@@ -6,8 +6,9 @@
     {
         void AddProduct(Product product);
         List<Product> GetProducts();
-        //ลบ
-        //ค้นหา
         Product GetProductById(int productId);
+        List<Product> GetProductByAny(int number, string keyword);
+        void DeleteById(Product product);
+
     }
 }

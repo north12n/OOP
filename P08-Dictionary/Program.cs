@@ -2,7 +2,6 @@
 Dictionary<string,string> Country = new Dictionary<string,string>();
 Dictionary<int, Double> UnitOfMoney = new Dictionary<int, Double>();
 
-
 Country.Add("Kan", "Kanchanaburi");
 Country.Add("Cm","ChaiengMai");
 Country.Add("BKK","BangKok");
@@ -27,4 +26,4 @@ var total = UnitOfMoney[1] + UnitOfMoney[2];
 UnitOfMoney.Sum(x => x.Value);
 
 Console.WriteLine(total);
-Console.WriteLine();
+

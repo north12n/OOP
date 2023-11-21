@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07-Exception", "P07-Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08-Dictionary", "P08-Dictionary\P08-Dictionary.csproj", "{F48FDBFA-27C9-423A-88D0-B3FE3EC28B1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09-Enum", "P09-Enum\P09-Enum.csproj", "{0225E027-D6AD-47CF-960C-4F7B5A19AC0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{F48FDBFA-27C9-423A-88D0-B3FE3EC28B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F48FDBFA-27C9-423A-88D0-B3FE3EC28B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F48FDBFA-27C9-423A-88D0-B3FE3EC28B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0225E027-D6AD-47CF-960C-4F7B5A19AC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0225E027-D6AD-47CF-960C-4F7B5A19AC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0225E027-D6AD-47CF-960C-4F7B5A19AC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0225E027-D6AD-47CF-960C-4F7B5A19AC0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
